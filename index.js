@@ -1,8 +1,6 @@
-const fs = require("fs");
-const util = require("util");
 const inquirer = require("inquirer");
 const axios = require("axios");
-var pdf = require("html-pdf");
+const pdf = require("html-pdf");
 const generateHTML = require("./generateHTML");
 
 // initialize the object "data" - given to the generateHTML function as an argument
@@ -70,6 +68,8 @@ async function init() {
 
       const html = await generateHTML.generateHTML(data);
 
+      // const fs = require("fs");
+      // const util = require("util");
       // const writeFileAsync = util.promisify(fs.writeFile);
       // await writeFileAsync("index.html", html, "utf8"); 
       
