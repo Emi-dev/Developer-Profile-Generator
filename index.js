@@ -5,9 +5,6 @@ const axios = require("axios");
 var pdf = require("html-pdf");
 const generateHTML = require("./generateHTML");
 
-const readFileSync = util.promisify(fs.readFileSync);
-const writeFileAsync = util.promisify(fs.writeFile);
-
 // initialize the object "data" - given to the generateHTML function as an argument
 const data = {
   color: "",
@@ -72,7 +69,10 @@ async function init() {
       });
 
       const html = await generateHTML.generateHTML(data);
-      // const options = { format: 'Letter' };
+
+      // const writeFileAsync = util.promisify(fs.writeFile);
+      // await writeFileAsync("index.html", html, "utf8"); 
+      
       pdf.create(html).toFile('./profile.pdf', function(err, resPDF) {
         if (err) return console.log(err);
         console.log(resPDF.filename, " successfully created!");

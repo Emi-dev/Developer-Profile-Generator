@@ -185,21 +185,21 @@ return `<!DOCTYPE html>
             </div>
             <main class="container">
                 <div class="row">
-                    <div class="card col-lg-5">
+                    <div class="card col">
                         <h6>Public Repositories</h6>
                         <h6>${data.public_repos}</h6>
                     </div>
-                    <div class="card col-lg-5">
+                    <div class="card col">
                         <h6>Followers</h6>
                         <h6>${data.followers}</h6>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="card col-lg-5">
+                    <div class="card col">
                         <h6>GitHub Stars</h6>
                         <h6>${data.stars}</h6>
                     </div>
-                    <div class="card col-lg-5">
+                    <div class="card col">
                         <h6>Following</h6>
                         <h6>${data.following}</h6>
                     </div>
