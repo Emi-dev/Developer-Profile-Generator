@@ -75,7 +75,7 @@ return `<!DOCTYPE html>
                 font-size: 3em;
             }
             h2 {
-            font-size: 2.5em;
+            font-size: 1.2em;
             }
             h3 {
                 font-size: 2em;
@@ -175,7 +175,7 @@ return `<!DOCTYPE html>
             <div class="photo-header container text-center">
                 <img src="${data.avatar_url}">
                 <h1>${data.name}</h1>
-                <h6>${data.bio}</h6>
+                <h2>${data.bio}</h2>
                 <div class="links-nav">
                     <a href="https://www.google.com/maps/place/${data.location}" class="nav-link" target="_blank">${data.location}</a>
                     <!--replace git hub-->
@@ -186,22 +186,22 @@ return `<!DOCTYPE html>
             <main class="container">
                 <div class="row">
                     <div class="card col">
-                        <h6>Public Repositories</h6>
-                        <h6>${data.public_repos}</h6>
+                        <h2>Public Repositories</h2>
+                        <h2>${data.public_repos}</h2>
                     </div>
                     <div class="card col">
-                        <h6>Followers</h6>
-                        <h6>${data.followers}</h6>
+                        <h2>Followers</h2>
+                        <h2>${data.followers}</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="card col">
-                        <h6>GitHub Stars</h6>
-                        <h6>${data.stars}</h6>
+                        <h2>GitHub Stars</h2>
+                        <h2>${data.stars}</h2>
                     </div>
                     <div class="card col">
-                        <h6>Following</h6>
-                        <h6>${data.following}</h6>
+                        <h2>Following</h2>
+                        <h2>${data.following}</h2>
                     </div>
                 </div>
             <main>
